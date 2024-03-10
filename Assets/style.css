@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #3498db, #2c3e50); 
+
+    .word {
+        color: #ecf0f1; /* Change text color */
+        font-size: 10rem;
+        cursor: none;
+    }
+}
+
+.illumination {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background: radial-gradient(
+        circle at var(--x) var(--y),
+        rgba(255, 255, 255, 0) 10%, 
+        #3498db 50% 
+    );
+}
